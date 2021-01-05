@@ -1,13 +1,3 @@
 FROM ubuntu
 
-RUN useradd joao
-
-USER joao
-
-RUN ping localhost
-
-USER root
-
-RUN apt-get install htop
-
-USER joao
+VOLUME ["/data"]
