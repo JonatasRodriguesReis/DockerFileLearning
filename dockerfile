@@ -1,5 +1,9 @@
 FROM ubuntu
 
+LABEL MAINTAINER="Jonatas Rodrigues Reis <jonatas.rodriguesreis@gmail.com>"
+LABEL APP_VERSION="1.0.0"
+ENV NPM_VERSION=8 ENVIRONMENT=PROD
+
 RUN apt-get update && apt-get install -y git nano
 
 WORKDIR /usr/share/myapp
